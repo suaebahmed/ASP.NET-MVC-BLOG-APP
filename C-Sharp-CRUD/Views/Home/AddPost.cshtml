@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="row">
+	<div class="col-md-6">
+		<h3>Add New Blog Post</h3>
+
+		<form action="/Home/AddPost" method="post" id="form">
+			<div class="form-group mb-2">
+				<label for="title">Title</label>
+				<input class="form-control" type="text" name="title">
+			</div>
+			<div class="form-group mb-2">
+				<label for="Author">Author Name</label>
+				<input class="form-control" type="text" name="Author">
+			</div>
+			<div class="form-group mb-3">
+				<label for="Description">Description</label>
+				<textarea class="form-control" type="text" name="Description" rows="3"></textarea>
+			</div>
+			<input type="submit" class="btn btn-primary" id="btnSubmit" value="Submit" />
+		</form>
+	</div>
+</div>
+

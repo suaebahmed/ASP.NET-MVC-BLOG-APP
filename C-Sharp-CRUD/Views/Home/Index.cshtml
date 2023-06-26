@@ -1,0 +1,31 @@
+﻿@model List<BlogPost>
+@{
+    //For comment out: Ctr + k then Ctr + c
+    //For undo comment out: Ctr + k then Ctr + u
+
+    //ViewData["Title"] = "Home Page"
+    var msg = ViewData["deletedBlog"];
+}
+
+<div class="">
+    @if (msg != null)
+    {
+    <div class="alert alert-danger" role="alert">
+        A simple danger alert—check it out!
+    </div>
+        
+    }
+    <p class="display-4">All The Post</p>
+    <hr />
+    @foreach(var post in Model)
+    {
+        <h2>@post.Title</h2>
+        <p>@post.Description</p>
+        <h6>Author: @post.Author</h6>
+        <a class="btn btn-outline-primary" href="/Home/GetPostById/@post.Id">See details</a>
+        <a class="btn btn-outline-warning m-3" href="/Home/GoToEditPage/@post.Id">Edit post</a>
+        <hr />
+    }
+
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>

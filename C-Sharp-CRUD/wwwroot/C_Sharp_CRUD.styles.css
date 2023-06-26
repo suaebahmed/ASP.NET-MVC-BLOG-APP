@@ -1,0 +1,17 @@
+﻿body {
+
+}
+.index1_h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    background-color: darkblue;
+    padding: 10px;
+    border-radius: 5px;
+}
+.index1_p{
+    border: 1px solid black;
+    padding: 10px;
+}
+
